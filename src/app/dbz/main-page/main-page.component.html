@@ -1,0 +1,17 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- Read the array characters in main-page component and send it to  characters component (father to child)-->
+        <!-- <app-characters [data]="characters"></app-characters> -->
+        <app-characters></app-characters>
+        
+    </div>
+    <div class="col">
+        <app-add 
+            [new]="new"
+            ></app-add>
+            <!-- (onNewCharacter) = "addNewCharacter( $event  )" -->
+    </div>
+</div>

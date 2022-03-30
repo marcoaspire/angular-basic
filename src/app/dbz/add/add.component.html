@@ -1,0 +1,16 @@
+<h3>Add new character: <small>{{new.name}} </small></h3>
+<hr>
+<!-- ngSubmit is part of FormsModule, avoid to refresh the page -->
+<form action="" (ngSubmit)="add()">
+    <!-- [] set a property to the object, () send or listen an event -->
+    <input type="text" placeholder="Name"
+        name="name"
+        [(ngModel)]="new.name"
+    >
+    <!-- [value]="new.name" 
+        (input) ="changeName($event)" -->
+
+    <input type="number" placeholder="Power points" name="power"
+    [(ngModel)]="new.powerPoints"> 
+    <button>Add</button>
+</form>

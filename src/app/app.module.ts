@@ -7,6 +7,7 @@ import { HeroeComponent } from './heroes/heroe/heroe.component';
 import { ListComponent } from './heroes/list/list.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { CounterModule } from './counter/counter.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 //create a new Module CounterModule
@@ -21,7 +22,8 @@ import { CounterModule } from './counter/counter.module';
   imports: [
     BrowserModule,
     HeroesModule,
-    CounterModule
+    CounterModule,
+    DbzModule
   ],
   //services
   providers: [],
